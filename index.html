@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26 October Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JavaScript links -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <p>2069 Robinson Lane, columbs,OH 43201, US +9876543210, xyz@gmail.com
+                </p>
+            </div>
+            <div class="col-md-6 text-end">
+                <button type="button" class="btn btn-dark">Register</button>
+                <button type="button" class="btn btn-danger">Login</button>
+            </div>
+        </div>
+        <div class="row heading p-3 ">
+            <div class="col-md-3">
+                <img src="images/logo-1024x292.png" alt="Logo" class="img-fluid">
+            </div>
+            <div class="col-md-9 text-end ">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto mr-5">
+                            <li class="nav-item active">
+                                <a class="nav-link " href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Properties</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Feature</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row search pt-3 px-5">
+            <div class="col-md-6  col-sm-12">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-buy btn-success">BUY</button>
+                    <button type="button" class="btn btn-rent btn-danger">RENT</button>
+                </div>
+                <hr>
+                <form class="px-3">
+                    <div class="row pt-3">
+                        <div class="col-md-12 col-12">
+                            <label for="city">CITY</label>
+                            <input type="text" class="form-control" placeholder="Enter your city">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 pt-3">
+                            <label for="priceFrom">PRICE FROM</label>
+                            <select name="priceFrom" id="priceFrom" class="form-select">
+                                <option value="">Any</option>
+                                <option value="$10000">$10,000</option>
+                                <option value="$20000">$20,000</option>
+                                <option value="$30000">$30,000</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-12 pt-3">
+                            <label for="priceTo">PRICE TO</label>
+                            <select name="priceTo" id="priceTo" class="form-select">
+                                <option value="">Any</option>
+                                <option value="$10000">$10,000</option>
+                                <option value="$20000">$20,000</option>
+                                <option value="$30000">$30,000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-md-6 col-12 pt-3">
+                            <label for="bedroomsMin">BEDROOMS MIN</label>
+                            <select name="bedroomsMin" id="bedroomsMin" class="form-select">
+                                <option value="">Any</option>
+                                <option value="+1">+1</option>
+                                <option value="+2">+2</option>
+                                <option value="+3">+3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12 pt-3">
+                            <label for="bedroomsMax">BEDROOM MAX</label>
+                            <select name="bedroomsMax" id="bedroomsMax" class="form-select">
+                                <option value="">Any</option>
+                                <option value="1+">1+</option>
+                                <option value="2+">2+</option>
+                                <option value="3+">3+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-md-6 col-sm-12 pt-3">
+                            <label for="bathrooms">BATHROOM</label>
+                            <select name="bathrooms" id="bathrooms" class="form-select">
+                                <option value="">Any</option>
+                                <option value="1+">1+</option>
+                                <option value="2+">2+</option>
+                                <option value="3+">3+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 pt-5">
+                            <input type="checkbox" class="btn-checkbox">Air conditioning
+                        </div>
+                        <div class="col-md-4 pt-5">
+                            <input type="checkbox" class="btn-checkbox">Pool
+                        </div>
+                        <div class="col-md-4 pt-5">
+                            <input type="checkbox" class="btn-checkbox">Security
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-12 col-sm-12 bg-danger px-3">
+                            <button type="button" class="btn btn-danger">SEARCH</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 text-center pt-3 ">
+                <h1 class="headline">FIND YOUR</h1>
+                <p class="subheadline">DREAM PROPERTIES</p>
+                <p class="subheadline">IN JUST 1 CLICK</p>
+            </div>
+        </div>
+
+        <div class="row mx-5 text-center pt-5 feature-row">
+            <div class="col-md-4 col-sm-12 feature-item">
+                <i class='bx bx-location-plus icon'></i>
+                <h3>Perfect Location</h3>
+                <p>Eos an high ceilings delicata. Quo ei noted architect discere facilisi. Eos dico historic delicata
+                    ex.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-item">
+                <i class='bx bx-location-plus icon'></i>
+                <h3>High Command Finder</h3>
+                <p>Eos an high ceilings delicata. Quo ei noted architect discere facilisi. Eos dico historic delicata
+                    ex.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-item">
+                <i class='bx bx-location-plus icon'></i>
+                <h3>Price Competitive</h3>
+                <p>Eos an high ceilings delicata. Quo ei noted architect discere facilisi. Eos dico historic delicata
+                    ex.</p>
+            </div>
+        </div>
+        <div class="row mx-5 text-center pt-5 feature-row">
+            <div class="col-md-4 col-sm-12 feature-item">
+                <i class='bx bx-location-plus icon'></i>
+                <h3>Online Checking</h3>
+                <p>Eos an high ceilings delicata. Quo ei noted architect discere facilisi. Eos dico historic delicata
+                    ex.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-item">
+                <i class='bx bx-location-plus icon'></i>
+                <h3>Best Consultants</h3>
+                <p>Eos an high ceilings delicata. Quo ei noted architect discere facilisi. Eos dico historic delicata
+                    ex.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 feature-item">
+                <i class='bx bx-location-plus icon'></i>
+                <h3>Most Valued</h3>
+                <p>Eos an high ceilings delicata. Quo ei noted architect discere facilisi. Eos dico historic delicata
+                    ex.</p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12 text-center pt-5">
+                <h1 class="recent-title">Most Recent Properties</h1>
+                <p class="recent-subtitle">Check out some of our latest properties</p>
+            </div>
+        </div>
+        <div class="row property-row">
+            <div class="col-md-4 col-sm-12">
+                <div class="property-card">
+                    <img src="/images/interior-living-room-of-a-forest-house-3d-6VHM3GK-min-600x400.jpg"
+                        class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Immense, Massive Views to</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Aliquam necsa
+                            pien inleo ultrices tempus sedat justo. Suspen disse molestie adipiscing...</p>
+                        <a href="#" class="btn btn-success">Under OFFER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="property-card">
+                    <img src="/images/interior-design-house-and-modern-white-kitchen-Z53XFYH-min-600x400.jpg"
+                        class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">FRESH START! - UNDER OFFER</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Aliquam necsa
+                            pien inleo ultrices tempus sedat justo. Suspen disse molestie adipiscing...</p>
+                        <a href="#" class="btn btn-success">UNDER OFFER</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="property-card">
+                    <img src="/images/enjoying-a-cozy-new-kitchen-in-an-open-concept-home-copy-space-light-bright-airy-decoration-interior_rox9lX-600x400.jpg"
+                        class="card-img-top" alt="img">
+                    <div class="card-body">
+                        <h5 class="card-title">Perfect Blend!</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Aliquam necsa
+                            pien inleo ultrices tempus sedat justo. Suspen disse molestie adipiscing...</p>
+                        <a href="#" class="btn btn-success">UNDER OFFER</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-end py-4">
+            <div class="col-md-12">
+                <a href="https://dunk.brickthemes.com/page/2/?pagination_id=3&instance_id=3"
+                    class="btn next-page-btn">Next Page</a>
+            </div>
+        </div>
+
+        <div class="row advise-section">
+            <div class="col-md-6 col-sm-12 text-center text-end pt-5">
+                <h1 class="advise-title">Need an Advice?</h1>
+                <h3 class="advise-subtitle">Our agents may help you out</h3>
+                <p class="advise-text">Fusce rutrum auctor odio vel sodales maecenas sit amet dignissim ex. Sed volutpat
+                    hendrerit nisl eget at mattis praesent maximus lectus in nulla fringilla, id euismod libero
+                    consequat etiam tellus justo.</p>
+                <a href="#" class="btn btn-outline-danger contact-btn">CONTACT NOW</a>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center pt-5">
+                <img src="/images/male-office-worker-working-laptop-office_1163-5337.avif" alt="img"
+                    class="img-fluid advise-image">
+            </div>
+        </div>
+        <div class="row inspection-section">
+            <div class="col-md-12 text-center pt-5">
+                <h1 class="inspection-title">Open for Inspection</h1>
+                <h5 class="inspection-subtitle">Best Choices of the Day</h5>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card inspection-card shadow-lg">
+                        <img src="/images/bright-cheery-kitchen-in-a-new-home-that-is-very-inviting-to-guest-enjoying-a-cozy-new-9lbZ3Y-600x400.jpg"
+                            class="card-img-top" alt="Lakeview Apartments">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lakeview Apartments - 1x1, 2x1</h5>
+                            <p class="card-text">The City of Rockingham is a seaside location about 50km south of the
+                                Perth CBD.</p>
+                            <a href="#" class="btn btn-danger price-btn">From $37,000</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card inspection-card shadow-lg">
+                        <img src="/images/bernard-hermant-min-600x400.jpg" class="card-img-top"
+                            alt="Bungalow with Garden">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bungalow with Garden</h5>
+                            <p class="card-text">Enjoy tranquil living in a beautiful bungalow with a lush garden.</p>
+                            <a href="#" class="btn btn-danger price-btn">POA</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <div class="card inspection-card shadow-lg">
+                        <img src="/images/armin-djuhic-min-600x400.jpg" class="card-img-top"
+                            alt="Property Listing Made Easy">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Property Listing Made Easy!</h5>
+                            <p class="card-text">A hassle-free way to list your property and attract buyers.</p>
+                            <a href="#" class="btn btn-danger price-btn">$9,999</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center pt-5">
+                <h1 class="section-title text-dark">Properties For Rent</h1>
+                <h5 class="section-subtitle p-3 text-danger">Check out some of our latest properties</h5>
+            </div>
+        </div>
+        <div class="row pt-5">
+            <div class="col-md-4 col-sm-12 mb-4 text-center">
+                <div class="card property-card shadow-lg">
+                    <img src="/images/holiday-house-VW3TZ5B-min-600x400.jpg" class="card-img-top"
+                        alt="Beautiful Villa with Pool">
+                    <div class="card-body">
+                        <h5 class="card-title">Beautiful Villa with Pool</h5>
+                        <p class="card-text">The City of Rockingham is a seaside location about 50km south of the Perth
+                            CBD.</p>
+                        <a href="#" class="btn btn-success price-btn">$400/Week</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4 text-center">
+                <div class="card property-card shadow-lg">
+                    <img src="/images/interior-living-room-of-a-forest-house-3d-6VHM3GK-min-600x400.jpg"
+                        class="card-img-top" alt="Full furniture with modern design">
+                    <div class="card-body">
+                        <h5 class="card-title">Full Furniture with Modern Design</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sapien
+                            in leo ultrices tempus.</p>
+                        <a href="#" class="btn btn-success price-btn">$700/Week</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4 text-center">
+                <div class="card property-card shadow-lg">
+                    <img src="/images/steven-ungermann-min-600x399.jpg" class="card-img-top"
+                        alt="Fully Furnished Available for Rent">
+                    <div class="card-body">
+                        <h5 class="card-title">Fully Furnished Available for Rent!</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sapien
+                            in leo ultrices tempus.</p>
+                        <a href="#" class="btn btn-success price-btn">$800/Week</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-end py-5">
+            <div class="col-md-12 ">
+                <a href="https://dunk.brickthemes.com/page/2/?pagination_id=3&instance_id=3"
+                    class="btn bg-danger btn-sm text-white"> Next Page</a>
+            </div>
+        </div>
+
+        <div class="row full-width pt-5 text-center">
+            <h1 class="section-title text-white p-2">BUY OR SELL</h1>
+            <h5 class="section-subtitle text-white">Looking to buy a new property or sell an existing one? We provide an
+                awesome solution!</h5>
+            <div class="button-container">
+                <button type="button" class="btn btn-success action-btn">Upload Yours</button>
+                <button type="button" class="btn btn-danger action-btn">Browse Our Data</button>
+            </div>
+        </div>
+
+        <div class="row images py-5">
+            <div class="col-md-12 text-center">
+                <h1>Our Agents</h1>
+                <h5>Check out some of our agents</h5>
+            </div>
+        </div>
+        <div class="row images text-center pt-2 first">
+            <div class="col-md-3">
+                <img src="/images/5.jpg" alt="img" class="img-fluid">
+                <h1 class="fs-3">Fatima Beatriz</h1>
+                <p>+1 236 456 7898</p>
+            </div>
+            <div class="col-md-3">
+                <img src="/images/4.jpg" alt="img" class="img-fluid">
+                <h1 class="fs-3">Frazer Mccann</h1>
+                <p>+1 236 456 7898</p>
+            </div>
+            <div class="col-md-3">
+                <img src="/images/3.jpg" alt="img" class="img-fluid">
+                <h1 class="fs-3">Bret Walker</h1>
+                <p>+1 236 456 7898</p>
+            </div>
+            <div class="col-md-3">
+                <img src="/images/1.jpg" alt="img" class="img-fluid">
+                <h1 class="fs-3">Jordanna Snow</h1>
+                <p>+1 236 456 7898</p>
+            </div>
+        </div>
+        <div class="row bg-dark py-3">
+            <div class="col-md-9 text-white text-center">
+                <h1>Special Offers On Villa Long Term Rentals & Lease Agreements</h1>
+            </div>
+            <div class="col-md-3 text-center pt-3">
+                <button type="button" class="btn btn-danger">Book Now</button>
+            </div>
+        </div>
+        <div class="row pt-5 text-center">
+            <div class="col-md-12">
+                <h1>
+                    News & Updates
+                </h1>
+                <h5>New information, new data, new choices</h5>
+            </div>
+        </div>
+        <div class="end-row py-5 text-center">
+            <div class="end-col">
+                <img src="/images/armin-djuhic-min-600x400.jpg" alt="img" class="img-fluid custom-img">
+            </div>
+            <div class="end-col">
+                <img src="/images/The_Toaster.jpg" alt="img" class="img-fluid custom-img">
+            </div>
+            <div class="end-col">
+                <img src="/images/12-Minden-Rise-Sorrento-1-scaled (1).jpg" alt="img" class="img-fluid custom-img">
+            </div>
+        </div>
+     
+        <footer class="mx-auto pt-5 bg-dark text-white">
+            <div class="row mx-auto pt-3">
+                <div class="col-md-2 col-sm-12 text-center">
+                    <ul class="footer-list">
+                        <li>Home</li>
+                        <li>Contact</li>
+                        <li>Property</li>
+                        <li>Rental</li>
+                        <li>Commercial</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-12 text-center">
+                    <ul class="footer-list">
+                        <li>News</li>
+                        <li>Listing</li>
+                        <li>Land</li>
+                        <li>Rural</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p><i class='bx bxs-edit-location'></i>2067 – 2069 Robinson Lane, Columbus, OH 43201, US</p>
+                    <p> <i class='bx bx-phone'></i>+1 859-698-5236</p>
+                    <p> <i class='bx bx-envelope'></i>sales@sample-domain.com</p>
+                    <p>Mon-Sat: 9:00 AM – 16:00 PM</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h2>Subscribe To Our Newsletter</h2>
+                    <form class="pt-1">
+                        <input type="email" placeholder="Email*" class="footer-input">
+                        <button type="button" class="btn btn-sm btn-danger">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row pt-5 text-center">
+                <div class="col-md-12">
+                    <p class="copyright">Copyright 2024 Dunk Estate © All rights reserved</p>
+                </div>
+            </div>
+        </footer>        
+    </div>
+</body>
+
+</html>
