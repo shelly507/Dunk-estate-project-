@@ -41,7 +41,7 @@
 }
 
 .search {
-    background-image: url(/images/1.livingrooms.jpg);
+    background-image: url(./images/1.livingrooms.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
